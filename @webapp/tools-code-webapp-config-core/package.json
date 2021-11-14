@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@webapp/tools-code-webapp-config-core",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "types": "src/index.d.ts",
+  "dependencies": {
+    "cosmiconfig": "^7.0"
+  }
+}
