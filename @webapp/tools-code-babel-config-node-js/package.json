@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@webapp/tools-code-babel-config-node-js",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "peerDependencies": {
+    "@babel/core": "^7.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.0",
+    "@webapp/tools-code-webapp-config-core": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.0"
+  }
+}
