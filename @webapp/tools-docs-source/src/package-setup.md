@@ -16,7 +16,7 @@ Prefixes to use:
 - tools-test-
 
 Some other naming guidelines:
-- -config-{context} (for packages that provide configuration, like -babel-config-node-js, ....)
+- -config-{context} (for packages that provide configuration, like -babel-config-node, ....)
 - -runner (for packages that run a tool on the whole mono-repo, like linting.)
 - -cli (for packages providing a CLI to run)
 - -app- (for actual application packages that are like an endpoint that will be bundled and deployed, or just deployed and ran.)

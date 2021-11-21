@@ -25,6 +25,9 @@ declare namespace webapp {
      */
     export interface WebappSettings {
         patterns: {
+            /**
+             * Sources are files in the "main" package directory.
+             */
             sources: {
                 all: { regExp: RegExp }
             }
