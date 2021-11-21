@@ -6,8 +6,8 @@
   projectFolderMaxDepth: 2,
   projects: [
     {
-      packageName: "@webapp/tools-code-babel-config-node-js",
-      projectFolder: "@webapp/tools-code-babel-config-node-js"
+      packageName: "@webapp/tools-code-babel-config-node",
+      projectFolder: "@webapp/tools-code-babel-config-node"
     },
     {
       packageName: "@webapp/tools-code-webapp-config-core",

@@ -1,20 +1,24 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/core': ^7.0
-  '@babel/preset-env': ^7.0
-  '@rush-temp/tools-code-babel-config-node-js': file:./projects/tools-code-babel-config-node-js.tgz
+  '@babel/core': ^7.9
+  '@babel/preset-env': ^7.9
+  '@babel/preset-typescript': ^7.9
+  '@rush-temp/tools-code-babel-config-node': file:./projects/tools-code-babel-config-node.tgz
   '@rush-temp/tools-code-webapp-config-core': file:./projects/tools-code-webapp-config-core.tgz
   '@types/babel__core': ^7.0
   cosmiconfig: ^7.0
+  typescript: ^4.5
 
 dependencies:
   '@babel/core': 7.16.0
   '@babel/preset-env': 7.16.0_@babel+core@7.16.0
-  '@rush-temp/tools-code-babel-config-node-js': file:projects/tools-code-babel-config-node-js.tgz
+  '@babel/preset-typescript': 7.16.0_@babel+core@7.16.0
+  '@rush-temp/tools-code-babel-config-node': file:projects/tools-code-babel-config-node.tgz
   '@rush-temp/tools-code-webapp-config-core': file:projects/tools-code-webapp-config-core.tgz
   '@types/babel__core': 7.1.16
   cosmiconfig: 7.0.1
+  typescript: 4.5.2
 
 packages:
 
@@ -634,6 +638,16 @@ packages:
       '@babel/helper-plugin-utils': 7.14.5
     dev: false
 
+  /@babel/plugin-syntax-typescript/7.16.0_@babel+core@7.16.0:
+    resolution: {integrity: sha512-Xv6mEXqVdaqCBfJFyeab0fH2DnUoMsDmhamxsSi4j8nLd4Vtw213WMJr55xxqipC/YVWyPY3K0blJncPYji+dQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/helper-plugin-utils': 7.14.5
+    dev: false
+
   /@babel/plugin-transform-arrow-functions/7.16.0_@babel+core@7.16.0:
     resolution: {integrity: sha512-vIFb5250Rbh7roWARvCLvIJ/PtAU5Lhv7BtZ1u24COwpI9Ypjsh+bZcKk6rlIyalK+r0jOc1XQ8I4ovNxNrWrA==}
     engines: {node: '>=6.9.0'}
@@ -971,6 +985,20 @@ packages:
       '@babel/helper-plugin-utils': 7.14.5
     dev: false
 
+  /@babel/plugin-transform-typescript/7.16.1_@babel+core@7.16.0:
+    resolution: {integrity: sha512-NO4XoryBng06jjw/qWEU2LhcLJr1tWkhpMam/H4eas/CDKMX/b2/Ylb6EI256Y7+FVPCawwSM1rrJNOpDiz+Lg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/helper-create-class-features-plugin': 7.16.0_@babel+core@7.16.0
+      '@babel/helper-plugin-utils': 7.14.5
+      '@babel/plugin-syntax-typescript': 7.16.0_@babel+core@7.16.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@babel/plugin-transform-unicode-escapes/7.16.0_@babel+core@7.16.0:
     resolution: {integrity: sha512-VFi4dhgJM7Bpk8lRc5CMaRGlKZ29W9C3geZjt9beuzSUrlJxsNwX7ReLwaL6WEvsOf2EQkyIJEPtF8EXjB/g2A==}
     engines: {node: '>=6.9.0'}
@@ -1088,6 +1116,20 @@ packages:
       '@babel/plugin-transform-dotall-regex': 7.16.0_@babel+core@7.16.0
       '@babel/types': 7.16.0
       esutils: 2.0.3
+    dev: false
+
+  /@babel/preset-typescript/7.16.0_@babel+core@7.16.0:
+    resolution: {integrity: sha512-txegdrZYgO9DlPbv+9QOVpMnKbOtezsLHWsnsRF4AjbSIsVaujrq1qg8HK0mxQpWv0jnejt0yEoW1uWpvbrDTg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/helper-plugin-utils': 7.14.5
+      '@babel/helper-validator-option': 7.14.5
+      '@babel/plugin-transform-typescript': 7.16.1_@babel+core@7.16.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /@babel/runtime/7.16.3:
@@ -1564,6 +1606,12 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
+  /typescript/4.5.2:
+    resolution: {integrity: sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
+
   /unicode-canonical-property-names-ecmascript/2.0.0:
     resolution: {integrity: sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ==}
     engines: {node: '>=4'}
@@ -1592,14 +1640,16 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  file:projects/tools-code-babel-config-node-js.tgz:
-    resolution: {integrity: sha512-jVK83MpP5ZPTveXrLE2uE2/N1q8WVbbJXbe/CcvTn62lSik8Jb4yv8N45IgEy/Chih6Ml6L8Jy3q3HLgamszvg==, tarball: file:projects/tools-code-babel-config-node-js.tgz}
-    name: '@rush-temp/tools-code-babel-config-node-js'
+  file:projects/tools-code-babel-config-node.tgz:
+    resolution: {integrity: sha512-A3iYBCryt23QYErhXft7EbjVqGxQRfUx4M/TsxAjaKNJ84vIA1Pjb5MhpG2fVrJBjaIZn94fAaxwR/gKmAkvDw==, tarball: file:projects/tools-code-babel-config-node.tgz}
+    name: '@rush-temp/tools-code-babel-config-node'
     version: 0.0.0
     dependencies:
       '@babel/core': 7.16.0
       '@babel/preset-env': 7.16.0_@babel+core@7.16.0
+      '@babel/preset-typescript': 7.16.0_@babel+core@7.16.0
       '@types/babel__core': 7.1.16
+      typescript: 4.5.2
     transitivePeerDependencies:
       - supports-color
     dev: false

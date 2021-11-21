@@ -1,1 +1,0 @@
-The "current" node version will be used to transpile through babel. It's best-practice to only specify a certain node version in your rush configuration, and let this package then use that version to know how to transpile your code. If you want to support more node version, specify more, and make sure that you have CI jobs that run everything on all supported versions.
