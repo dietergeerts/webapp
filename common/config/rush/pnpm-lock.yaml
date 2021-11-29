@@ -1,23 +1,29 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/core': ^7.9
-  '@babel/preset-env': ^7.9
-  '@babel/preset-typescript': ^7.9
+  '@babel/core': ^7.0
+  '@babel/preset-env': ^7.0
+  '@babel/preset-react': ^7.0
+  '@babel/preset-typescript': ^7.0
+  '@rush-temp/tools-code-babel-config-browser': file:./projects/tools-code-babel-config-browser.tgz
   '@rush-temp/tools-code-babel-config-node': file:./projects/tools-code-babel-config-node.tgz
   '@rush-temp/tools-code-webapp-config-core': file:./projects/tools-code-webapp-config-core.tgz
   '@types/babel__core': ^7.0
   cosmiconfig: ^7.0
-  typescript: ^4.5
+  react: ^17.0
+  typescript: ^4.0
 
 dependencies:
   '@babel/core': 7.16.0
   '@babel/preset-env': 7.16.0_@babel+core@7.16.0
+  '@babel/preset-react': 7.16.0_@babel+core@7.16.0
   '@babel/preset-typescript': 7.16.0_@babel+core@7.16.0
+  '@rush-temp/tools-code-babel-config-browser': file:projects/tools-code-babel-config-browser.tgz
   '@rush-temp/tools-code-babel-config-node': file:projects/tools-code-babel-config-node.tgz
   '@rush-temp/tools-code-webapp-config-core': file:projects/tools-code-webapp-config-core.tgz
   '@types/babel__core': 7.1.16
   cosmiconfig: 7.0.1
+  react: 17.0.2
   typescript: 4.5.2
 
 packages:
@@ -564,6 +570,16 @@ packages:
       '@babel/helper-plugin-utils': 7.14.5
     dev: false
 
+  /@babel/plugin-syntax-jsx/7.16.0_@babel+core@7.16.0:
+    resolution: {integrity: sha512-8zv2+xiPHwly31RK4RmnEYY5zziuF3O7W2kIDW+07ewWDh6Oi0dRq8kwvulRkFgt6DB97RlKs5c1y068iPlCUg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/helper-plugin-utils': 7.14.5
+    dev: false
+
   /@babel/plugin-syntax-logical-assignment-operators/7.10.4_@babel+core@7.16.0:
     resolution: {integrity: sha512-d8waShlpFDinQ5MtvGU9xDAOzKH47+FFoney2baFIoMr952hKOLp1HR7VszoZvOsV/4+RRszNY7D17ba0te0ig==}
     peerDependencies:
@@ -914,6 +930,51 @@ packages:
       '@babel/helper-plugin-utils': 7.14.5
     dev: false
 
+  /@babel/plugin-transform-react-display-name/7.16.0_@babel+core@7.16.0:
+    resolution: {integrity: sha512-FJFdJAqaCpndL+pIf0aeD/qlQwT7QXOvR6Cc8JPvNhKJBi2zc/DPc4g05Y3fbD/0iWAMQFGij4+Xw+4L/BMpTg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/helper-plugin-utils': 7.14.5
+    dev: false
+
+  /@babel/plugin-transform-react-jsx-development/7.16.0_@babel+core@7.16.0:
+    resolution: {integrity: sha512-qq65iSqBRq0Hr3wq57YG2AmW0H6wgTnIzpffTphrUWUgLCOK+zf1f7G0vuOiXrp7dU1qq+fQBoqZ3wCDAkhFzw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/plugin-transform-react-jsx': 7.16.0_@babel+core@7.16.0
+    dev: false
+
+  /@babel/plugin-transform-react-jsx/7.16.0_@babel+core@7.16.0:
+    resolution: {integrity: sha512-rqDgIbukZ44pqq7NIRPGPGNklshPkvlmvqjdx3OZcGPk4zGIenYkxDTvl3LsSL8gqcc3ZzGmXPE6hR/u/voNOw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/helper-annotate-as-pure': 7.16.0
+      '@babel/helper-module-imports': 7.16.0
+      '@babel/helper-plugin-utils': 7.14.5
+      '@babel/plugin-syntax-jsx': 7.16.0_@babel+core@7.16.0
+      '@babel/types': 7.16.0
+    dev: false
+
+  /@babel/plugin-transform-react-pure-annotations/7.16.0_@babel+core@7.16.0:
+    resolution: {integrity: sha512-NC/Bj2MG+t8Ef5Pdpo34Ay74X4Rt804h5y81PwOpfPtmAK3i6CizmQqwyBQzIepz1Yt8wNr2Z2L7Lu3qBMfZMA==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/helper-annotate-as-pure': 7.16.0
+      '@babel/helper-plugin-utils': 7.14.5
+    dev: false
+
   /@babel/plugin-transform-regenerator/7.16.0_@babel+core@7.16.0:
     resolution: {integrity: sha512-JAvGxgKuwS2PihiSFaDrp94XOzzTUeDeOQlcKzVAyaPap7BnZXK/lvMDiubkPTdotPKOIZq9xWXWnggUMYiExg==}
     engines: {node: '>=6.9.0'}
@@ -1116,6 +1177,21 @@ packages:
       '@babel/plugin-transform-dotall-regex': 7.16.0_@babel+core@7.16.0
       '@babel/types': 7.16.0
       esutils: 2.0.3
+    dev: false
+
+  /@babel/preset-react/7.16.0_@babel+core@7.16.0:
+    resolution: {integrity: sha512-d31IFW2bLRB28uL1WoElyro8RH5l6531XfxMtCeCmp6RVAF1uTfxxUA0LH1tXl+psZdwfmIbwoG4U5VwgbhtLw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/helper-plugin-utils': 7.14.5
+      '@babel/helper-validator-option': 7.14.5
+      '@babel/plugin-transform-react-display-name': 7.16.0_@babel+core@7.16.0
+      '@babel/plugin-transform-react-jsx': 7.16.0_@babel+core@7.16.0
+      '@babel/plugin-transform-react-jsx-development': 7.16.0_@babel+core@7.16.0
+      '@babel/plugin-transform-react-pure-annotations': 7.16.0_@babel+core@7.16.0
     dev: false
 
   /@babel/preset-typescript/7.16.0_@babel+core@7.16.0:
@@ -1462,6 +1538,13 @@ packages:
     resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}
     dev: false
 
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+
   /minimist/1.2.5:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: false
@@ -1472,6 +1555,11 @@ packages:
 
   /node-releases/2.0.1:
     resolution: {integrity: sha512-CqyzN6z7Q6aMeF/ktcMVTzhAHCEpf8SOarwpzpf8pNBY2k5/oM34UHldUwp8VKI7uxct2HxSRdJjBaZeESzcxA==}
+    dev: false
+
+  /object-assign/4.1.1:
+    resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
+    engines: {node: '>=0.10.0'}
     dev: false
 
   /object-keys/1.1.1:
@@ -1517,6 +1605,14 @@ packages:
 
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: false
+
+  /react/17.0.2:
+    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
     dev: false
 
   /regenerate-unicode-properties/9.0.0:
@@ -1640,8 +1736,24 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
+  file:projects/tools-code-babel-config-browser.tgz:
+    resolution: {integrity: sha512-vsyvdTknQcza2D1v0u6SIZD2niGuhPboMIb31MFxS2lmo2Di+k0pU0q0IuwlWrypcM/PWZG3HdpouG8LByec5Q==, tarball: file:projects/tools-code-babel-config-browser.tgz}
+    name: '@rush-temp/tools-code-babel-config-browser'
+    version: 0.0.0
+    dependencies:
+      '@babel/core': 7.16.0
+      '@babel/preset-env': 7.16.0_@babel+core@7.16.0
+      '@babel/preset-react': 7.16.0_@babel+core@7.16.0
+      '@babel/preset-typescript': 7.16.0_@babel+core@7.16.0
+      '@types/babel__core': 7.1.16
+      react: 17.0.2
+      typescript: 4.5.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   file:projects/tools-code-babel-config-node.tgz:
-    resolution: {integrity: sha512-A3iYBCryt23QYErhXft7EbjVqGxQRfUx4M/TsxAjaKNJ84vIA1Pjb5MhpG2fVrJBjaIZn94fAaxwR/gKmAkvDw==, tarball: file:projects/tools-code-babel-config-node.tgz}
+    resolution: {integrity: sha512-2563223iAN4IiqHtmJtNNV9gib4DThu1SGya0uzrF+BjNdu1iZrYeyaLRu+mVU+3BwOLyDxl58Djy6m8H1t1bA==, tarball: file:projects/tools-code-babel-config-node.tgz}
     name: '@rush-temp/tools-code-babel-config-node'
     version: 0.0.0
     dependencies:
