@@ -1,13 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/core': ^7.0
-  '@babel/preset-env': ^7.0
-  '@babel/preset-react': ^7.0
-  '@babel/preset-typescript': ^7.0
-  '@rush-temp/tools-code-babel-config-browser': file:./projects/tools-code-babel-config-browser.tgz
-  '@rush-temp/tools-code-babel-config-node': file:./projects/tools-code-babel-config-node.tgz
-  '@rush-temp/tools-code-webapp-config-core': file:./projects/tools-code-webapp-config-core.tgz
+  '@babel/core': ^7.9
+  '@babel/preset-env': ^7.9
+  '@babel/preset-react': ^7.9
+  '@babel/preset-typescript': ^7.9
+  '@rush-temp/babel-config-browser': file:./projects/babel-config-browser.tgz
+  '@rush-temp/babel-config-node': file:./projects/babel-config-node.tgz
+  '@rush-temp/webapp-config': file:./projects/webapp-config.tgz
   '@types/babel__core': ^7.0
   cosmiconfig: ^7.0
   react: ^17.0
@@ -18,9 +18,9 @@ dependencies:
   '@babel/preset-env': 7.16.0_@babel+core@7.16.0
   '@babel/preset-react': 7.16.0_@babel+core@7.16.0
   '@babel/preset-typescript': 7.16.0_@babel+core@7.16.0
-  '@rush-temp/tools-code-babel-config-browser': file:projects/tools-code-babel-config-browser.tgz
-  '@rush-temp/tools-code-babel-config-node': file:projects/tools-code-babel-config-node.tgz
-  '@rush-temp/tools-code-webapp-config-core': file:projects/tools-code-webapp-config-core.tgz
+  '@rush-temp/babel-config-browser': file:projects/babel-config-browser.tgz
+  '@rush-temp/babel-config-node': file:projects/babel-config-node.tgz
+  '@rush-temp/webapp-config': file:projects/webapp-config.tgz
   '@types/babel__core': 7.1.16
   cosmiconfig: 7.0.1
   react: 17.0.2
@@ -1736,9 +1736,9 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  file:projects/tools-code-babel-config-browser.tgz:
-    resolution: {integrity: sha512-vsyvdTknQcza2D1v0u6SIZD2niGuhPboMIb31MFxS2lmo2Di+k0pU0q0IuwlWrypcM/PWZG3HdpouG8LByec5Q==, tarball: file:projects/tools-code-babel-config-browser.tgz}
-    name: '@rush-temp/tools-code-babel-config-browser'
+  file:projects/babel-config-browser.tgz:
+    resolution: {integrity: sha512-ObfxKsWI2f0/EtzOp5UWKUpFkg+24HCeYA2HQrRFtT5YKNOW2FN/EpFEQmJXNa27fo64edaa3vtd0vT2e/x57Q==, tarball: file:projects/babel-config-browser.tgz}
+    name: '@rush-temp/babel-config-browser'
     version: 0.0.0
     dependencies:
       '@babel/core': 7.16.0
@@ -1752,9 +1752,9 @@ packages:
       - supports-color
     dev: false
 
-  file:projects/tools-code-babel-config-node.tgz:
-    resolution: {integrity: sha512-2563223iAN4IiqHtmJtNNV9gib4DThu1SGya0uzrF+BjNdu1iZrYeyaLRu+mVU+3BwOLyDxl58Djy6m8H1t1bA==, tarball: file:projects/tools-code-babel-config-node.tgz}
-    name: '@rush-temp/tools-code-babel-config-node'
+  file:projects/babel-config-node.tgz:
+    resolution: {integrity: sha512-hwMMw2uu/6e7ew3Bt3ywPQRVFKxGYU3IdGHZkBtkxrBRgFJbcBjefSw6Q8iC3n5KvlwdiXAbr48unDk3c8fVrg==, tarball: file:projects/babel-config-node.tgz}
+    name: '@rush-temp/babel-config-node'
     version: 0.0.0
     dependencies:
       '@babel/core': 7.16.0
@@ -1766,9 +1766,9 @@ packages:
       - supports-color
     dev: false
 
-  file:projects/tools-code-webapp-config-core.tgz:
-    resolution: {integrity: sha512-2z0fa0Y3cZJiQQnE5yFMbUM3OeE8LXoJLARFRL5bHCwza6hk+BCp/Te3ZZ+xtQKhRf+CSfXqrx7qU0XEZVkzag==, tarball: file:projects/tools-code-webapp-config-core.tgz}
-    name: '@rush-temp/tools-code-webapp-config-core'
+  file:projects/webapp-config.tgz:
+    resolution: {integrity: sha512-ELUB1M2qiWY1l+6JjQkj7T6ptudKBX6tYHIg4f/lPn3bKVZGxWHA3ZsBaKANWf9S1JZyQAv9QcpOjtOfi8KsFw==, tarball: file:projects/webapp-config.tgz}
+    name: '@rush-temp/webapp-config'
     version: 0.0.0
     dependencies:
       cosmiconfig: 7.0.1

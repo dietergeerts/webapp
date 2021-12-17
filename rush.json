@@ -6,16 +6,16 @@
   projectFolderMaxDepth: 2,
   projects: [
     {
-      packageName: "@webapp/tools-code-babel-config-browser",
-      projectFolder: "@webapp/tools-code-babel-config-browser"
+      packageName: "@webapp-code/babel-config-browser",
+      projectFolder: "@webapp-code/babel-config-browser"
     },
     {
-      packageName: "@webapp/tools-code-babel-config-node",
-      projectFolder: "@webapp/tools-code-babel-config-node"
+      packageName: "@webapp-code/babel-config-node",
+      projectFolder: "@webapp-code/babel-config-node"
     },
     {
-      packageName: "@webapp/tools-code-webapp-config-core",
-      projectFolder: "@webapp/tools-code-webapp-config-core"
+      packageName: "@webapp-core/webapp-config",
+      projectFolder: "@webapp-core/webapp-config"
     }
   ]
 }
