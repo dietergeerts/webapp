@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@webapp/tools-code-babel-config-node",
+  "name": "@webapp-code/babel-config-node",
   "version": "0.0.0",
   "main": "src/index.js",
   "type": "commonjs",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.9",
     "@babel/preset-typescript": "^7.9",
-    "@webapp/tools-code-webapp-config-core": "^0.0.0"
+    "@webapp-core/webapp-config": "^0.0.0"
   },
   "devDependencies": {
     "@types/babel__core": "^7.0"

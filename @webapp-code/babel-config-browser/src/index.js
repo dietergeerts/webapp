@@ -1,4 +1,4 @@
-const webapp = require('@webapp/tools-code-webapp-config-core')
+const webapp = require('@webapp-core/webapp-config')
 const util = require("util");
 
 /**

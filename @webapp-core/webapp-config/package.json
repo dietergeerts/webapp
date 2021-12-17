@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@webapp/tools-code-webapp-config-core",
+  "name": "@webapp-core/webapp-config",
   "version": "0.0.0",
   "main": "src/index.js",
   "type": "commonjs",
