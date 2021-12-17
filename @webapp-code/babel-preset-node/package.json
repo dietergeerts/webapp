@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@webapp-code/babel-preset-node",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "peerDependencies": {
+    "@babel/core": "^7.9"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.9",
+    "@babel/preset-env": "^7.9",
+    "@webapp-core/webapp-config": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.0"
+  }
+}

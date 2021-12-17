@@ -6,12 +6,20 @@
   projectFolderMaxDepth: 2,
   projects: [
     {
-      packageName: "@webapp-code/babel-config-browser",
-      projectFolder: "@webapp-code/babel-config-browser"
+      packageName: "@webapp-code/babel-preset-browser",
+      projectFolder: "@webapp-code/babel-preset-browser"
     },
     {
-      packageName: "@webapp-code/babel-config-node",
-      projectFolder: "@webapp-code/babel-config-node"
+      packageName: "@webapp-code/babel-preset-node",
+      projectFolder: "@webapp-code/babel-preset-node"
+    },
+    {
+      packageName: "@webapp-code/babel-preset-react",
+      projectFolder: "@webapp-code/babel-preset-react"
+    },
+    {
+      packageName: "@webapp-code/babel-preset-typescript",
+      projectFolder: "@webapp-code/babel-preset-typescript"
     },
     {
       packageName: "@webapp-core/webapp-config",
