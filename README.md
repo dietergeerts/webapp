@@ -1,5 +1,6 @@
 # webapp
-A collection of guides, tools and examples to create web applications with ease and great developer experience
+
+A collection of guides, tools and examples to create web applications with ease and great developer experience.
 
 ## Install
 
@@ -11,4 +12,3 @@ $ rush install [--max-install-attempts 1]
 
 - [NodeJS](https://nodejs.org)
 - [Rush](https://rushjs.io)
-
