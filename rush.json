@@ -22,6 +22,22 @@
       projectFolder: "@webapp-code/babel-preset-typescript"
     },
     {
+      packageName: "@webapp-config/project-config",
+      projectFolder: "@webapp-config/project-config"
+    },
+    {
+      packageName: "@webapp-config/project-config-from-rush",
+      projectFolder: "@webapp-config/project-config-from-rush"
+    },
+    {
+      packageName: "@webapp-config/project-config-model",
+      projectFolder: "@webapp-config/project-config-model"
+    },
+    {
+      packageName: "@webapp-config/source-file-patterns",
+      projectFolder: "@webapp-config/source-file-patterns"
+    },
+    {
       packageName: "@webapp-core/webapp-config",
       projectFolder: "@webapp-core/webapp-config"
     }

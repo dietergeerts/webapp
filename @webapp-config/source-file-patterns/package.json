@@ -1,11 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@webapp-core/webapp-config",
+  "name": "@webapp-config/source-file-patterns",
   "version": "0.0.0",
-  "main": "src/index.js",
   "type": "commonjs",
-  "types": "src/index.d.ts",
   "dependencies": {
-    "cosmiconfig": "7.0.1"
+    "@webapp-config/project-config": "^0.0.0",
+    "escape-string-regexp": "^4"
   }
 }

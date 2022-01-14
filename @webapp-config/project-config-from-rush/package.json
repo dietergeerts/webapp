@@ -1,11 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@webapp-core/webapp-config",
+  "name": "@webapp-config/project-config-from-rush",
   "version": "0.0.0",
   "main": "src/index.js",
   "type": "commonjs",
-  "types": "src/index.d.ts",
   "dependencies": {
-    "cosmiconfig": "7.0.1"
+    "@microsoft/rush-lib": "^5",
+    "@webapp-config/project-config-model": "^0.0.0"
   }
 }
